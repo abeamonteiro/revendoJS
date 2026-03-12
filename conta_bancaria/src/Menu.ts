@@ -1,5 +1,5 @@
-import readline = require('readline-sync')
-
+import readlineSync from 'readline-sync'
+import { Conta } from '../src/model/Conta'
 
 let opcao: number
 
@@ -23,50 +23,49 @@ console.log("            9 - Sair                                 ")
 console.log("                                                     ")
 console.log("*****************************************************")
 
-
 console.log("Entre com a opção desejada: ")
-opcao = readline.questionInt("")
+opcao = readlineSync.questionInt("")
 
 switch(opcao){
 
 case 1:
-console.log("Criar Conta\n")
+    console.log("\nCriar Conta\n")
 break
 
 case 2:
-console.log("Listar todas as Contas\n")
+    console.log("\nListar todas as Contas\n")
 break
 
 case 3:
-console.log("Consultar Conta por Número\n")
+    console.log("\nConsultar Conta por Número\n")
 break
 
 case 4:
-console.log("Atualizar Dados da Conta\n")
+    console.log("\nAtualizar Dados da Conta\n")
 break
 
 case 5:
-console.log("Apagar Conta\n")
+    console.log("\nApagar Conta\n")
 break
 
 case 6:
-console.log("Sacar\n")
+    console.log("\nSacar\n")
 break
 
 case 7:
-console.log("Depositar\n")
+    console.log("\nDepositar\n")
 break
 
 case 8:
-console.log("Transferir valores entre Contas\n")
+    console.log("\nTransferir valores entre Contas\n")
 break
 
 case 9:
-console.log("Banco do Brazil com Z - O seu futuro começa aqui!")
+    console.log("\nBanco do Brazil com Z - O seu futuro começa aqui!")
 break
 
 default:
-console.log("Opção Inválida!\n")
+    console.log("\nOpção Inválida!\n")
 
 }
 
